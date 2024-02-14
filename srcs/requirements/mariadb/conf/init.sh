@@ -1,7 +1,10 @@
 #!/bin/bash
 
 # Démarrer le service MySQL/MariaDB
+
 service mysql start
+
+mysql -u root
 
 # Créer la base de données si elle n'existe pas
 mysql -e "CREATE DATABASE IF NOT EXISTS \`${SQL_DATABASE}\`;"
