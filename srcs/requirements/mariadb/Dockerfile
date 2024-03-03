@@ -2,5 +2,9 @@ FROM debian:bookworm
 
 RUN apt update -y
 RUN apt upgrade -y
-RUN apt install mariadb-server -y
-ENTRYPOINT ./conf/init.sh
+RUN apt install mariadb-server mariadb-client -y
+RUN rm /etc/mysql/mariadb.conf.d/50-server.cnf
+COPY ./conf/50-server.cnf /etc/mysql/mariadb.conf.d/
+COPY ./conf/init.sh /
+RUN chmod +x /init.sh
+ENTRYPOINT ["bash", "/init.sh"]
