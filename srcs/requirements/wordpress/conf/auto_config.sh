@@ -10,7 +10,6 @@ then
 	curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar
 	chmod +x wp-cli.phar
 	mv wp-cli.phar /usr/local/bin/wp 
-	mv wp-config-sample.php wp-config.php
 
 	wp core download --allow-root
 	wp config create --dbhost=$SQL_HOST --dbname=$SQL_DATABASE --dbuser=$SQL_USER --dbpass=$SQL_PASSWORD --allow-root

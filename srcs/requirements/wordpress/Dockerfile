@@ -19,6 +19,7 @@ RUN apt install -y \
 	php-curl \
 	mariadb-client
 
+RUN mkdir -p /run/php
 COPY ./conf/www.conf /etc/php/7.3/fpm/pool.d/
 
 WORKDIR /var/www/html/
