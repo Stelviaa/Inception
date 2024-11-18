@@ -8,4 +8,4 @@ git clone https://github.com/Stelviaa/Inception.git
 cd Inception
 make
 ```
-Go to this [GitHub Pages](https://localhost:8080).
+Once the containers have finished compiling, you can go [here](https://localhost:8080).
