@@ -1,4 +1,4 @@
-# ft_irc
+# Inception
 Inception, project of common core to 42 school.
 ## Purpose
 Project to learn how to use Docker. My goal was to make communicate the following containers: Nginx, Wordpress, and Mariadb with my own images.
