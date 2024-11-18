@@ -9,3 +9,4 @@ cd Inception
 make
 ```
 Once the containers have finished compiling, you can go [here](https://localhost:443).
+When you arrive on the website, the browser displays a warning, this is because the ssl certificate is self-signed. It's not a problem, you can still go to the site.
