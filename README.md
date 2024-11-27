@@ -3,6 +3,7 @@
 ## Purpose
 Project to learn how to use Docker. My goal was to make communicate the following containers: Nginx, Wordpress, and Mariadb with my own images.
 ## Download and Installation
+The project has been made with docker and docker compose, you must have the both installed to compile.
 ```
 git clone https://github.com/Stelviaa/Inception.git
 cd Inception
